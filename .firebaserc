@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "missy-tribute",
+    "missy-tribute": "missy-tribute"
+  },
+  "targets": {},
+  "etags": {}
+}

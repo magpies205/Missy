@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Missy ❤️</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-color: #fff0f5;
+      color: #4b004b;
+    }
+    header {
+      background-color: #f5a3c7;
+      text-align: center;
+      padding: 1rem 0.5rem 0.5rem;
+      border-bottom: 3px dashed #d5006b;
+      
+    }
+    .title-text {
+      font-size: 3rem;
+      font-family: 'Patrick Hand', cursive;
+      color: #fff;
+      background-color: #ff66b2;
+      padding: 0.5rem 2rem;
+      border-radius: 40px; /* Keeps the rounded shape */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      border: 4px solid #d5006b; /* Pink outline color */
+    }
+
+    nav a {
+      font-weight: 600;
+      color: #4b004b !important;
+      margin: 0 1rem;
+    }
+    h2 {
+      font-family: 'Patrick Hand', cursive;
+      color: #99004d;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .decorated {
+      border: 10px solid #ff99cc;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      max-height: 500px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .card-scrapbook {
+      border: none;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    .card-scrapbook img {
+      border-radius: 10px;
+    }
+    ul li::before {
+      content: "🐾 ";
+    }
+    .footer {
+      background-color: #ffccf2;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 3px dashed #ff99cc;
+    }
+    section:nth-of-type(even) {
+      background-color: #fff7fb;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+    }
+    section:nth-of-type(odd) {
+      background-color: #ffe6f2;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+      gap: 15px;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding-top: 0%; /* Adjusted aspect ratio (try 45% or 50% for a wider view) */
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Keeps the full video visible without cropping */
+      object-position: center; /* Centers the video */
+    }
+
+
+
+
+
+
+    .polaroid {
+      background: white;
+      padding: 10px 10px 30px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1rem;
+      color: #4b004b;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+    }
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    html {
+      scroll-padding-top: 80px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #ff66b2;
+    }
+    nav a {
+      font-weight: 600;
+      color: #fff !important;
+      margin: 0 1rem;
+    }
+
+    /* New CSS to style only the images in the carousel */
+    #missyPicturesCarousel .carousel-item img {
+      border: 5px solid #ff66b2; /* Pink border around carousel images */
+      border-radius: 10px; /* Rounded corners for carousel images */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for carousel images */
+      height: 600px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #ff66b2; /* Pink dots */
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+      opacity: 0.5;
+    }
+
+    .carousel-indicators .active {
+      opacity: 1;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: brightness(0) saturate(100%) invert(69%) sepia(22%) saturate(2357%) hue-rotate(290deg) brightness(100%) contrast(101%);
+    }
+
+    }
+    .polaroid {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border: 2px solid #f3f3f3;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-family: 'Patrick Hand', cursive; 
+      font-size: 1rem;
+    }
+
+    .polaroid img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    /* Style modifier for Missy Moments (pink background) */
+    .moments-style {
+      background-color: #ffe0ec; /* light pink background like Missy Quirks */
+      border: 2px dashed #ff66b2; /* matches pink dots and scrapbook vibe */
+    }
+
+    .foods-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 15px;
+    }
+
+    .foods-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .foods-image img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <div class="title-text">Sweet Missy ❤️</div>
+  
+  </header>
+
+  <nav class="nav justify-content-center py-3">
+    <a class="nav-link" href="#slideshow">Missy Slideshow</a>
+    <a class="nav-link" href="#moments">Missy Moments</a>
+    <a class="nav-link" href="#quirks">Missy Quirks</a>
+    <a class="nav-link" href="#places">Missy Places</a>
+    <a class="nav-link" href="#foods">Missy Foods</a>
+    <a class="nav-link" href="#videos">Missy Videos</a>
+  </nav>
+
+  <div class="container py-5">
+
+    <section id="slideshow">
+      <h2>📸 Missy Slideshow</h2>
+      <div id="missyPicturesCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Dots / Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide-to="10" aria-label="Slide 10"></button>
+        </div>
+
+        <!-- Carousel images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/missy-heaven.jpg" class="d-block w-100" alt="Missy Picture 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk9.jpg" class="d-block w-100" alt="Missy Picture 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk17.jpg" class="d-block w-100" alt="Missy Picture 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk26.jpg" class="d-block w-100" alt="Missy Picture 4">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk22.jpg" class="d-block w-100" alt="Missy Picture 5">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk11.png" class="d-block w-100" alt="Missy Picture 6">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk1.png" class="d-block w-100" alt="Missy Picture 7">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk2.png" class="d-block w-100" alt="Missy Picture 8">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk3.png" class="d-block w-100" alt="Missy Picture 9">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk14.jpg" class="d-block w-100" alt="Missy Picture 10">
+          </div>
+          <div class="carousel-item">
+            <img src="images/quirk7.png" class="d-block w-100" alt="Missy Picture 11">
+          </div>
+        </div>
+
+        <!-- Prev / Next buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#missyPicturesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+        <section id="moments">
+          <h2>🐶 Missy Moments</h2>
+          <div class="row">
+
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk1.jpg" alt="Missy moment 3">
+                <div>Howling Missy</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk2.jpg" alt="Missy moment 3">
+                <div>Sleeping position</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk8.jpg" alt="Missy moment 3">
+                <div>Curious Missy</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk18.jpg" alt="Missy moment 1">
+                <div>Missy fall photoshoot</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk3.jpg" alt="Missy moment 2">
+                <div>Sunbathing</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk16.jpg" alt="Missy moment 3">
+                <div>Napping</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk4.png" alt="Missy moment 3">
+                <div>Missy playing with Penny</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk5.png" alt="Missy moment 3">
+                <div>Missy biting the blanket?</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk6.png" alt="Missy moment 3">
+                <div>Weird positioning</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk6.jpg" alt="Missy moment 3">
+                <div>Relaxed Missy</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk10.jpg" alt="Missy moment 3">
+                <div>Stretch</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk12.jpg" alt="Missy moment 3">
+                <div>More sleeping positions </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk13.jpg" alt="Missy moment 3">
+                <div>Paws up</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk16.jpg" alt="Missy moment 3">
+                <div>Napping</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk15.jpg" alt="Missy moment 3">
+                <div>Happy Missy in the sun</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk19.jpg" alt="Missy moment 3">
+                <div>More sleeping positions</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk20.jpg" alt="Missy moment 3">
+                <div>Photogenic Missy</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk21.jpg" alt="Missy moment 3">
+                <div>Snapchat filter</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk23.jpg" alt="Missy moment 3">
+                <div>Festive!</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk25.jpg" alt="Missy moment 3">
+                <div>Missy loved the snow</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk27.jpg" alt="Missy moment 3">
+                <div>Hiking in the rain</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk28.jpg" alt="Missy moment 3">
+                <div>Pet-itentiary prisoner</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk29.PNG" alt="Missy moment 3">
+                <div>Curious dog</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk30.png" alt="Missy moment 3">
+                <div>So much hair!</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk31.png" alt="Missy moment 3">
+                <div>Hiked to Jesus</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk32.png" alt="Missy moment 3">
+                <div>Lion Mountain Trail</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk33.png" alt="Missy moment 3">
+                <div>Scratching on the door</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk34.png" alt="Missy moment 3">
+                <div>Last time hiking Lion Mountain Trail</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk35.png" alt="Missy moment 3">
+                <div>Keep petting her</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk36.png" alt="Missy moment 3">
+                <div>Ready to go</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk37.png" alt="Missy moment 3">
+                <div>Missy at a distance</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk38.png" alt="Missy moment 3">
+                <div>Cross-country skiing!</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk39.png" alt="Missy moment 3">
+                <div>Staying cool on the snow</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk40.png" alt="Missy moment 3">
+                <div>Rolling around in the grass</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk41.png" alt="Missy moment 3">
+                <div>Missy hiked to Jesus again</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk42.png" alt="Missy moment 3">
+                <div>Getting lots of pets</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk43.png" alt="Missy moment 3">
+                <div>More rolling around in the grass</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk44.png" alt="Missy moment 3">
+                <div>New house</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk45.png" alt="Missy moment 3">
+                <div>Lurking...</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk46.png" alt="Missy moment 3">
+                <div>Bath time</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk47.JPG" alt="Missy moment 3">
+                <div>Missy in the corner</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk48.png" alt="Missy moment 3">
+                <div>Posing</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk49.PNG" alt="Missy moment 3">
+                <div>The tongue</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk50.JPG" alt="Missy moment 3">
+                <div>Missy and the sisters</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk51.JPG" alt="Missy moment 3">
+                <div>Polite</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk52.JPG" alt="Missy moment 3">
+                <div>Energetic car ride</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk53.png" alt="Missy moment 3">
+                <div>Exhausting car ride</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk54.JPG" alt="Missy moment 3">
+                <div>Wants a treat</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk55.png" alt="Missy moment 3">
+                <div>Relaxing on the chair</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk56.png" alt="Missy moment 3">
+                <div>Missy making a new friend on the trail</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk57.png" alt="Missy moment 3">
+                <div>🙃</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk58.png" alt="Missy moment 3">
+                <div>Dirt eater</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk59.png" alt="Missy moment 3">
+                <div>Foaming mouth</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk60.png" alt="Missy moment 3">
+                <div>Nails clipped</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk61.png" alt="Missy moment 3">
+                <div>Bow tie</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk62.png" alt="Missy moment 3">
+                <div>Snow dog</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk63.png" alt="Missy moment 3">
+                <div>Go Griz!</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk64.PNG" alt="Missy moment 3">
+                <div>Early walk to Whitefish Lake</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk65.JPG" alt="Missy moment 3">
+                <div>Nice and cozy</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk66.JPG" alt="Missy moment 3">
+                <div>New cooling pad</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk67.JPG" alt="Missy moment 3">
+                <div>Missy's chair</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk68.JPG" alt="Missy moment 3">
+                <div>Adventure buddies</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk69.png" alt="Missy moment 3">
+                <div>Smelling something</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk70.png" alt="Missy moment 3">
+                <div>The cousins</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk71.JPG" alt="Missy moment 3">
+                <div>Teeth</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk72.png" alt="Missy moment 3">
+                <div>Majestic</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk73.JPG" alt="Missy moment 3">
+                <div>Cozy Christmas</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk74.png" alt="Missy moment 3">
+                <div>Wind blowing in her ears</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk75.png" alt="Missy moment 3">
+                <div>Not fun</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk76.JPG" alt="Missy moment 3">
+                <div>Beautiful smile</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk77.png" alt="Missy moment 3">
+                <div>Sisters</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk78.JPG" alt="Missy moment 3">
+                <div>Getting pets</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk79.png" alt="Missy moment 3">
+                <div>Stylish</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk80.JPG" alt="Missy moment 3">
+                <div>Taking a break in the snow</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk81.JPG" alt="Missy moment 3">
+                <div>Nice and warm</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk82.JPG" alt="Missy moment 3">
+                <div>Missy and mom</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk83.JPG" alt="Missy moment 3">
+                <div>More cozy Missy </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk84.JPG" alt="Missy moment 3">
+                <div>Getting ready for Halloween</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk85.JPG" alt="Missy moment 3">
+                <div>Pretty Missy with a bow</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk86.png" alt="Missy moment 3">
+                <div>Ready to eat </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk87.png" alt="Missy moment 3">
+                <div>Guarding the house</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk88.png" alt="Missy moment 3">
+                <div>Graduation dog</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk89.JPG" alt="Missy moment 3">
+                <div>The Missys</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk90.png" alt="Missy moment 3">
+                <div>What happened?!</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk91.JPG" alt="Missy moment 3">
+                <div>The Christmas dog</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk92.JPG" alt="Missy moment 3">
+                <div>Very comfortable</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="polaroid moments-style">
+                <img src="images/quirk93.png" alt="Missy moment 3">
+                <div>More Lion Mountain Trail!</div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </section>
+
+        <section id="quirks">
+          <h2>🐾 Missy Quirks</h2>
+          <ul class="mt-3">
+            <li>She’d randomly howl—especially at night. She had lots to say.</li>
+            <li>Wouldn’t catch food, just let it bounce off her face.</li>
+            <li>So flexible—she’d flop upside down on the couch, against the wall, or in weird poses.</li>
+            <li>Super needy—always had to be pet, always close.</li>
+            <li>Did a sideways puppy run with her tail that spun like a helicopter.</li>
+            <li>Loved sticking her head out the window and was always so curious. Would watch us at all times from afar.</li>
+            <li>Would bark at other dogs whenever we drove by them.</li>
+            <li>Didn't know how big she was and would knock little dogs down to the ground. </li>
+            <li>Loved opening presents on Christmas.</li>
+            <li>She'd smell the flowers. </li>
+            <li>She'd eat bugs. </li>
+            <li>Ran through a screen door and broke it right off the hinge.</li>
+            <li>Tore her bed and looked veru guilty trying to hide the hole she made.</li>
+            <li>Almost drowned kayaking and had to be rescued.</li>
+            <li>Laid down mid-walk and flipped on her back in the road.</li>
+            <li>Locked dad out of the car when they were on the trail.</li>
+            <li>Got a treat from UPS driver while on a walk and wouldn't eat it until we got back. She went the whole walk with it in her mouth.</li>
+            <li>Almost drowned Penny.</li>
+            <li>Got stuck in the big pool of water up on Big Mountain and we had to pull her out.</li>
+            <li>Had the shiniest hair and could've been in a shampoo commercial.</li>
+            <li>Had giant paws and popcorn feet.</li>
+            <li>Was non-confrontational and would flip upside down when under pressure.</li>
+          </ul>
+        </section>
+
+
+        <section id="places">
+          <h2>🌲 Missy Places</h2>
+          <p>She loved Lion Mountain Trail the most.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-scrapbook">
+                <img src="images/quirk24.jpg" class="card-img-top" alt="Missy at trail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-scrapbook">
+                <img src="images/quirk4.jpg" class="card-img-top" alt="Missy walking with her booties on">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="foods">
+          <h2>🍖 Missy Foods</h2>
+          <div class="foods-wrapper">
+            <div class="foods-text">
+              <ul>
+                <li>Loved bacon treats.</li>
+                <li>Loved peanut butter.</li>
+                <li>Would always clean the scraps off the floor.</li>
+                <li>Loved chicken.</li>
+                <li>Loved beef and pork.</li>
+                <li>Loved cookies.</li>
+                <li>Didn't love celery or lettuce as much but would always eat it anyway.</li>
+                <li>Ate her salmon food.</li>
+                <li>Wasn't picky and would eat anything because she'd feel guilty if she didn't eat it.</li>
+              </ul>
+            </div>
+            <div class="foods-image">
+              <img src="images/eating.png" alt="Missy eating" />
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="videos">
+          <h2>🎥 Missy Videos</h2>
+          <div class="video-grid">
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/howl.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/digging.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/sun.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/playing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/howling1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/catching.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/howling2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="video-wrapper">
+              <video controls>
+                <source src="videos/presents.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!-- Add more videos here -->
+          </div>
+        </section>
+
+
+
+      </div>
+
+      <div class="footer">
+        <p>In loving memory of Missy 🐶❤️ </p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+
+
